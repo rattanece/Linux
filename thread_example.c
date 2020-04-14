@@ -76,9 +76,6 @@ void *myThreadFun2(void *vargp)
 //	err = pthread_join(thread_id1, NULL); 
 //      printf("thread 1 2 %d\n",global_x); 
         err = pthread_create(&thread_id1, NULL, myThreadFun1, NULL); 
-//	err = pthread_join(thread_id1, NULL); 
-//      printf("thread 1 3 %d\n",global_x); 
-        err = pthread_create(&thread_id1, NULL, myThreadFun1, NULL); 
 	err = pthread_join(thread_id1, NULL); 
         printf("thread 1 4 %d\n",global_x); 
 
